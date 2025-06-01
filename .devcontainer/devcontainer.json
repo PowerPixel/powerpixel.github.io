@@ -3,7 +3,8 @@
 {
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye"
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+	"onCreateCommand" : "sudo apt-get update && sudo apt-get install gnupg2 -y"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
